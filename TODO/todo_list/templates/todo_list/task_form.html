@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+{% extends 'todo_list/base.html' %}
+
+{% block content %}
+
 <h1>Task Form</h1>
 <a href="{% url 'tasks' %}">Go back</a>
 <form method="post" action="">
@@ -11,4 +9,5 @@
     {{ form.as_p }}
     <input type="submit" value="Submit">
 </form>
-</html>
+
+{% endblock content %}
